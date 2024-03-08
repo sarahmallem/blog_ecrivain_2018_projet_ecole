@@ -1,0 +1,29 @@
+<div class="table">
+    <table>
+        <form action="/index.php?page=addarticlesadmin" method="get">
+            <input type="hidden" name="page" value="addarticlesadmin" />
+            <input type="hidden" name="id" value="{ARTICLE_ID}" />
+            <thead class="thead-dark">
+                <tr>
+                    <th>Titre</th>
+                    <th>Article</th>
+                    <th>Auteur</th>
+                    <th>Date</th>
+                    <th colspan="2">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>{ARTICLE_TITLE}</td>
+                    <td>{ARTICLE_CONTENT}</td>
+                    <td>{ARTICLE_AUTEUR}</td>
+                    <td>{ARTICLE_DATE}</td>
+                    <td>
+                        <input class="buttonadmin" type="submit" value="Modifier" name="editbillet">
+        </form>
+        <form action="/index.php?page=espaceadmin" method="post"><input type="hidden" name="id" value="{ARTICLE_ID}" /><input class="buttonadmin" type="submit" value="Supprimer" name="deletebillet"> </form>
+        </td>
+        <tr>
+            </tbody>
+    </table>
+</div>

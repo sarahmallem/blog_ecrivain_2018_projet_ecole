@@ -1,0 +1,8 @@
+<tbody>
+    <tr>
+        <td>{COMMENTS_AUTHOR}</td>
+        <td>{COMMENTS_COMMENT}</td>
+        <td>{COMMENTS_DATE}</td>
+            <form action="/index.php?page=commentsadmin" method="POST">
+                <input type="hidden" name="commentId" value="{COMMENTS_ID}">
+        <td><input class="buttonadmin" type="submit" value="Supprimer le commentaire" name="deletecomments"> </form></td>

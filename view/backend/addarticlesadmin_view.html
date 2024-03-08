@@ -1,0 +1,21 @@
+<br /><br />
+<h1>AJOUTER UN BILLET </h1><br />
+
+<div class="addcommentstyle">
+    <form action="/index.php?page=addarticlesadmin" method="post">
+        <input type="hidden" name="id" value="{ARTICLE_ID}" />
+        <p>
+            <h2>Titre de l'article</h2>
+            <input type="text" name="addtitle" value="{ARTICLE_TITLE}">
+
+            <h2>Auteur:</h2>
+            <input type="text" name="addauthor" value="{ARTICLE_AUTHOR}">
+
+        </p>
+        <h2>Le billet:</h2>
+        <textarea class="addcomments" name="addbillet" value="{ARTICLE_CONTENT}" cols="25" rows="5"></textarea>
+
+        <p><input type="submit" name="submit" value="Publier">
+            <input type="reset" value="Effacer"></p>
+    </form>
+</div>

@@ -1,0 +1,29 @@
+<div class="row d-flex justify-content-center">
+    <section id="articles" />
+    <div class="col-md-12">
+        <h2>{ARTICLE_TITLE}</h2>
+        <h3>{ARTICLE_AUTEUR}</h3>
+        <p>{ARTICLE_DATE}</p>
+        <p>{ARTICLE_CONTENT}</p>
+        <div class="commentaires">
+            <h2>Commentaires</h2>
+            {LOOP_COMMENTS}
+
+
+        <br /><br /><h4> Ajouter un commentaire </h4>
+            <form name="formulaire" id="formulaire" action="/index.php?page=chapter" method="POST">
+                <input type="hidden" name="postId" value="{ARTICLE_ID}" />
+                <p>
+                    <h3>Auteur:</h3>
+                    <input required type="text" name="author" value="" placeholder="Entrez votre pseudo...">
+                </p>
+                <h3>Message:</h3>
+                <textarea name="message" value="{COMMENTS_COMMENT}" cols="25" rows="5"></textarea>
+                <p><input type="submit" name="submit" value="Publier">
+                    <input type="reset" value="Effacer">
+                </p>
+            </form>
+        </div>
+    </div>
+</div>
+</section>

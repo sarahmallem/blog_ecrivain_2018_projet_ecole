@@ -1,0 +1,13 @@
+     <tr>
+         <td>{COMMENTS_AUTHOR}</td>
+         <td>{COMMENTS_COMMENT}</td>
+         <td>{COMMENTS_DATE}</td>
+         </form>
+         <form action="/index.php?page=reportadmin" method="POST">
+             <input type="hidden" name="commentId" value="{COMMENTS_ID}">
+             <td><input class="buttonadmin" type="submit" value="Supprimer le signalement" name="deletereport">
+         </form>
+         <form action="/index.php?page=reportadmin" method="POST">
+             <input type="hidden" name="commentId" value="{COMMENTS_ID}">
+             <input class="buttonadmin" type="submit" value="Annuler le signalement" name="canceldelete"></td>
+         </form>

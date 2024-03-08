@@ -1,0 +1,9 @@
+<a style="color:white;">Ecrit par:</a>
+<p>{COMMENTS_AUTHOR}</p>
+<p>{COMMENTS_DATE}</p>
+<p>{COMMENTS_COMMENT}</p>
+
+<form action="/index.php?page=chapter" method="POST">
+    <input type="hidden" name="commentId" value="{COMMENTS_ID}">
+    <input id="button" class="report" name="report" type="submit" value="Reporter le commentaire" />
+</form>

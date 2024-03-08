@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/png" href="/public/img/JT.png" />
+    <link href="/public/css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <script type="text/javascript" src="../public/js/tinymce/tinymce.min.js"></script>
+    <script type="text/javascript">
+        tinyMCE.init({
+            mode: "textareas",
+            language: "fr_FR"
+        });
+    </script>
+    <script defer src="/public/css/fontawesome/js/all.js"></script>
+    <link rel="stylesheet" href="public/css/style.css">
+    <title>{TITLE} - Jean Forteroche </title>
+</head>
+
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="sidebar">
+                <ul class="navespaceadmin">
+                    <li class="nav-item" id="espaceadmin"><a class="nav-link" href="index.php?page=espaceadmin">ESPACE ADMIN</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.php?page=addarticlesadmin"><i class="fas fa-book"></i> AJOUTER UN BILLET</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.php?page=espaceadmin"><i class="fas fa-list-alt"></i> GÉRER LES BILLETS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.php?page=commentsadmin"><i class="fas fa-comments"></i> LES COMMENTAIRES</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.php?page=reportadmin"><i class="fas fa-flag"></i></i> SIGNALEMENT</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/../controller/logout_controller.php"><i class="fas fa-sign-out-alt"></i> DECONNEXION</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    {CONTENT}
+
+    <footer>
+    </footer>
+
+</body>
+
+</html>
